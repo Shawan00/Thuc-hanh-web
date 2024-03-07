@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Thông tin người dùng</title>
+    <link rel="stylesheet" href="style/reset.css">
+    <link rel="stylesheet" href="style/login.css">
+</head>
+<body>
+    <section>
+        <form id="form-login" onsubmit="login()">
+            <h1>Thông tin</h1>
+        
+            <div class="inputbox">
+                <ion-icon name="ios-person-outline"></ion-icon>
+                <input type="text" id="hoTen" required>
+                <label for="hoTen" >Họ tên</label>
+            </div>
+            <div class="inputbox date">
+                <ion-icon name="ios-person-outline"></ion-icon>
+                <input id="date" type="date" min="1900-01-01" max="2009-01-01" required  >
+                <label for="date">Ngày sinh</label>
+            </div>
+            <div class="inputbox">
+                <ion-icon name="ios-person-outline"></ion-icon>
+                <input type="text" id="cccd" required>
+                <label for="cccd">Căn cước công dân</label>
+            </div>
+            <div class="inputbox">
+                <ion-icon name="ios-person-outline"></ion-icon>
+                <input type="text" id="diaChi" required>
+                <label for="diaChi">Địa chỉ thường trú</label>
+            </div>
+            
+            <div class="container"><button class="submit" onclick="xuLy()">Lưu thông tin</button></div>
+            
+            
+        </form>
+        <script src="login.js"></script>
+    </section>
+</body>
+</html>
